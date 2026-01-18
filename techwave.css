@@ -43,7 +43,7 @@ nav {
 .nav-btn button {
   width: 135px;
   height: 44px;
-  background: linear-gradient(15deg, #f7e93f 20%, #fb09b4 40%, #9100f8 70%);
+  background: linear-gradient(20deg, #f7e93f 10%, #fb09b4 50%, #9100f8 90%);
   /* -webkit-text-fill-color: transparent;
   background-clip: text; */
   color: white;
