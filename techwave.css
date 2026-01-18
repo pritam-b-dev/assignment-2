@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  max-width: 1600px;
+  background-color: #1a0b2e;
+}
+nav {
+  width: 75%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  text-align: center;
+}
+.brand-logo {
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+}
+.brand-logo > span {
+  background: linear-gradient(10deg, #f7e93f 5%, #fb09b4 40%, #9100f8 70%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.nav-menu {
+  width: 218px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.nav-btn button {
+  width: 135px;
+  height: 44px;
+  background: linear-gradient(15deg, #f7e93f 20%, #fb09b4 40%, #9100f8 70%);
+  /* -webkit-text-fill-color: transparent;
+  background-clip: text; */
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 10000px;
+  line-height: 19px;
+  cursor: pointer;
+}
+.nav-btn button i {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  padding-left: 3px;
+}
+.nav-menu a:hover {
+  color: #fb09b4;
+}
