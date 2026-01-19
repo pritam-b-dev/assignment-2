@@ -8,8 +8,11 @@ body {
   max-width: 1600px;
   background-color: #1a0b2e;
 }
+
+/* header styles starts */
+
+/* nav style starts */
 nav {
-  width: 75%;
   max-width: 1200px;
   margin: auto;
   display: flex;
@@ -44,8 +47,6 @@ nav {
   width: 135px;
   height: 44px;
   background: linear-gradient(20deg, #f7e93f 10%, #fb09b4 50%, #9100f8 90%);
-  /* -webkit-text-fill-color: transparent;
-  background-clip: text; */
   color: white;
   font-weight: 600;
   font-size: 16px;
@@ -63,3 +64,24 @@ nav {
 .nav-menu a:hover {
   color: #fb09b4;
 }
+.hamburger-menu {
+  display: none;
+}
+
+/* nav style ends */
+
+/* header style ends */
+
+/* media query responsive for mobile mxw576 starts */
+
+@media screen and (max-width: 576px) {
+  .nav-menu,
+  .nav-btn {
+    display: none;
+  }
+  .hamburger-menu {
+    display: inline;
+  }
+}
+
+/* media query responsive for mobile mxw576 ends */
