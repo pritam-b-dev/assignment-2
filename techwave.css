@@ -82,6 +82,8 @@ hr {
   background-size: cover;
   background-position: center;
   display: flex;
+  flex-direction: column;
+
   justify-content: center;
   align-items: center;
 }
@@ -96,9 +98,10 @@ hr {
   position: absolute;
 }
 .img-circle {
-  bottom: 25%;
+  bottom: 15%;
 }
 .img-mcp {
+  top: 10%;
   left: 33%;
 }
 .img-pill {
@@ -110,8 +113,45 @@ hr {
   height: 38px;
   padding: 8px 16px;
   left: 70%;
-  top: -20%;
+  top: -10%;
   text-align: center;
+}
+
+.banner-text-buttons {
+  color: white;
+  text-align: center;
+}
+.banner-text-buttons > h2 {
+  font-size: 73px;
+  font-weight: bolder;
+}
+.banner-text-buttons > p {
+  padding-bottom: 24px;
+  color: rgba(255, 255, 255, 0.702);
+}
+.banner-buttons .banner-buttons-1 {
+  width: 200px;
+  height: 45px;
+  background: linear-gradient(20deg, #f7e93f 10%, #fb09b4 50%, #9100f8 90%);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 10000px;
+  line-height: 19px;
+  cursor: pointer;
+}
+.banner-buttons .banner-buttons-1 img {
+  vertical-align: middle;
+  padding-right: 5px;
+}
+.banner-buttons .banner-buttons-2 {
+  width: 145px;
+  height: 45px;
+  border-radius: 10000px;
+  background-color: transparent;
+  border: 2px solid #00ff88;
+  color: #00ff88;
 }
 
 /* banner-container section ends */
