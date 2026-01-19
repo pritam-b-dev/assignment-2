@@ -218,6 +218,7 @@ hr {
   padding-top: 80px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 120px;
 }
 .counts .counts-card h2 {
   font-size: 48px;
@@ -229,6 +230,60 @@ hr {
 }
 
 /* about section ends */
+.advantages {
+  color: white;
+  background-color: rgba(35, 14, 61, 1);
+}
+.advantages-title {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+.advantages-grid {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 390px);
+  grid-template-rows: repeat(3, 260px);
+  gap: 30px;
+  margin: auto;
+}
+.common-grid-card-styles {
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.common-grid-card-styles h1 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+.common-grid-card-styles p {
+  color: rgba(255, 255, 255, 0.727);
+}
+.common-grid-card-styles img {
+  width: 50px;
+  height: 50px;
+}
+.grid-card-headphone {
+  grid-row: 1 / span 2;
+}
+.grid-card-device {
+  grid-column: 2 / span 2;
+}
+.grid-card-global {
+  grid-column: 2 / span 2;
+}
+.grid-card-exclusive {
+  grid-column: 1 / span 2;
+}
+.grid-card-resource {
+}
 
 /* media query responsive for mobile mxw576 starts */
 
@@ -288,6 +343,8 @@ hr {
   }
 
   /* header responsive area ends */
+
+  /* about responsive area starts */
   .about {
     padding-top: 40px;
   }
@@ -301,6 +358,7 @@ hr {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
+  /* about responsive area ends */
 }
 
 /* media query responsive for mobile mxw576 ends */
