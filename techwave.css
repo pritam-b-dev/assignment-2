@@ -230,6 +230,8 @@ hr {
 }
 
 /* about section ends */
+
+/* advantages section starts */
 .advantages {
   color: white;
   background-color: rgba(35, 14, 61, 1);
@@ -241,13 +243,17 @@ hr {
   padding-top: 120px;
   padding-bottom: 40px;
 }
-.advantages-grid {
+.grid {
   max-width: 1200px;
+  margin: auto;
+}
+.advantages-grid {
   display: grid;
   grid-template-columns: repeat(3, 390px);
   grid-template-rows: repeat(3, 260px);
   gap: 30px;
   margin: auto;
+  padding-bottom: 120px;
 }
 .common-grid-card-styles {
   background-color: rgba(53, 17, 101, 0.4);
@@ -267,8 +273,8 @@ hr {
   color: rgba(255, 255, 255, 0.727);
 }
 .common-grid-card-styles img {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 53px;
 }
 .grid-card-headphone {
   grid-row: 1 / span 2;
@@ -282,8 +288,7 @@ hr {
 .grid-card-exclusive {
   grid-column: 1 / span 2;
 }
-.grid-card-resource {
-}
+/* advantages section ends */
 
 /* media query responsive for mobile mxw576 starts */
 
@@ -359,6 +364,28 @@ hr {
     grid-template-rows: repeat(2, 1fr);
   }
   /* about responsive area ends */
+
+  /* advantages responsive section starts */
+  .advantages-title {
+    font-size: 27px;
+    padding: 20px;
+  }
+  .advantages-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    padding: 20px;
+  }
+  .grid-card-headphone,
+  .grid-card-device,
+  .grid-card-global,
+  .grid-card-exclusive,
+  .grid-card-resource {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  /* advantages responsive section ends */
 }
 
 /* media query responsive for mobile mxw576 ends */
