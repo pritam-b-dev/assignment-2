@@ -85,7 +85,6 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 .banner-image {
@@ -289,6 +288,18 @@ hr {
   grid-column: 1 / span 2;
 }
 /* advantages section ends */
+.video-container-card {
+  width: 380px;
+  aspect-ratio: 16 / 9;
+}
+.video-container-card iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* videos section starts */
+
+/* videos section ends */
 
 /* media query responsive for mobile mxw576 starts */
 
