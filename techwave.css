@@ -70,6 +70,48 @@ nav {
 
 /* nav style ends */
 
+/* banner-container section starts */
+.banner-container {
+  height: 760px;
+  background-image: url(images/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-image {
+  width: 350px;
+  height: 350px;
+  position: relative;
+}
+.img-circle,
+.img-mcp,
+.img-pill {
+  position: absolute;
+}
+.img-circle {
+  bottom: 25%;
+}
+.img-mcp {
+  left: 33%;
+}
+.img-pill {
+  background-color: #00ff88;
+  font-size: 18px;
+  border-radius: 1000px;
+  font-weight: 600;
+  width: 75px;
+  height: 38px;
+  padding: 8px 16px;
+  left: 70%;
+  top: -20%;
+  text-align: center;
+}
+
+/* banner-container section ends */
+
 /* header style ends */
 
 /* media query responsive for mobile mxw576 starts */
