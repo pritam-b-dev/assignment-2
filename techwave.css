@@ -81,6 +81,10 @@ nav {
   }
   .hamburger-menu {
     display: inline;
+    padding-right: 20px;
+  }
+  .brand-logo {
+    padding-left: 20px;
   }
 }
 
