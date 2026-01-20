@@ -346,6 +346,56 @@ hr {
 }
 /* videos section ends */
 
+/* host section starts */
+
+.host {
+  color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.host-title {
+  font-size: 48px;
+  font-weight: bold;
+}
+.host-container {
+  margin-top: 40px;
+  margin-bottom: 120px;
+  padding: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: start;
+  gap: 24px;
+  background-color: rgba(35, 14, 61, 1);
+  border-radius: 40px;
+}
+.host-info .host-about h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+.host-info .host-about p {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.409);
+}
+.host-info .host-social {
+  display: flex;
+  gap: 8px;
+}
+.host-info .host-social div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.162);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* host section ends */
+
 /* media query responsive for mobile mxw576 starts */
 
 @media screen and (max-width: 576px) {
@@ -442,6 +492,8 @@ hr {
   }
 
   /* advantages responsive section ends */
+
+  /* Video responsive section starts */
   .video-container {
     flex-direction: column;
     gap: 16px;
@@ -454,6 +506,21 @@ hr {
   .card-heading {
     font-size: 32px;
   }
+  /* Video responsive section ends */
+
+  /* Host responsive section starts */
+  .host-container {
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+  }
+  .host-social {
+    justify-content: center;
+  }
+  .host-title {
+    font-size: 32px;
+  }
+  /* Host responsive section ends */
 }
 
 /* media query responsive for mobile mxw576 ends */
