@@ -616,7 +616,7 @@ footer {
 
   /* footer responsive section starts */
   footer {
-    background-size: 150% 150%;
+    background-size: 168% 100%;
     background-position: center;
   }
 
@@ -631,6 +631,7 @@ footer {
     font-size: 14px;
     width: 100%;
     text-align: center;
+    padding-bottom: 20px;
   }
   .footer-social .break {
     display: block;
