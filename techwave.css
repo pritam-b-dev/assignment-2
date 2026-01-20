@@ -288,17 +288,62 @@ hr {
   grid-column: 1 / span 2;
 }
 /* advantages section ends */
-.video-container-card {
-  width: 380px;
-  aspect-ratio: 16 / 9;
-}
-.video-container-card iframe {
-  width: 100%;
-  height: 100%;
-}
 
 /* videos section starts */
 
+.videos {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+.card-heading {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  padding-top: 120px;
+}
+.video-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 120px;
+}
+
+.video-container-card {
+  width: 380px;
+  background-color: rgba(35, 14, 61, 1);
+  color: white;
+  border-radius: 20px;
+  text-align: left;
+  overflow: hidden;
+}
+.video-card {
+  aspect-ratio: 16/9;
+}
+.video-card iframe {
+  width: 100%;
+  height: 100%;
+}
+.video-title {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.video-title img {
+  vertical-align: middle;
+  padding-right: 5px;
+}
+.video-title span {
+  color: #00ff88;
+}
+.video-container-card .video-title h3 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 24px;
+}
+.video-container-card .video-title p {
+  padding: 12px 0px;
+  color: rgba(255, 255, 255, 0.559);
+}
 /* videos section ends */
 
 /* media query responsive for mobile mxw576 starts */
