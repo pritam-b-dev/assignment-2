@@ -157,7 +157,7 @@ hr {
   font-weight: bolder;
 }
 .banner-text-buttons > p {
-  padding-bottom: 24px;
+  padding: 10px;
   color: rgba(255, 255, 255, 0.702);
 }
 .banner-buttons {
@@ -616,7 +616,7 @@ footer {
 
   /* footer responsive section starts */
   footer {
-    background-size: 168% 100%;
+    background-size: 165% 80%;
     background-position: center;
   }
 
@@ -625,7 +625,8 @@ footer {
   }
   .footer-container .brand-logo {
     font-size: 40px;
-    padding-bottom: 24px;
+    padding-bottom: 7px;
+    padding-top: 60px;
   }
   .footer-container p {
     font-size: 14px;
