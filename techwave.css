@@ -186,6 +186,7 @@ hr {
   background-color: transparent;
   border: 2px solid #00ff88;
   color: #00ff88;
+  cursor: pointer;
 }
 .banner-buttons .banner-buttons-2 img {
   vertical-align: middle;
@@ -396,6 +397,50 @@ hr {
 
 /* host section ends */
 
+/* footer section starts */
+footer {
+  max-width: 100%;
+  background-image: url(images/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 120px 0px;
+}
+.footer-container .brand-logo {
+  font-size: 60px;
+  padding-bottom: 30px;
+}
+.footer-container p {
+  color: rgba(255, 255, 255, 0.465);
+}
+.footer-social {
+  color: rgba(255, 255, 255, 0.465);
+  padding-bottom: 32px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 40px;
+  align-items: center;
+}
+.footer-container img {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.footer-social span {
+  font-size: 13px;
+  font-weight: 500;
+}
+br {
+  display: none;
+}
+
+/* footer section ends */
+
 /* media query responsive for mobile mxw576 starts */
 
 @media screen and (max-width: 576px) {
@@ -521,6 +566,33 @@ hr {
     font-size: 32px;
   }
   /* Host responsive section ends */
+
+  /* footer responsive section starts */
+  footer {
+    background-size: 100% 100%;
+    background-position: center;
+  }
+
+  .footer-container {
+    padding: 20px;
+  }
+  .footer-container .brand-logo {
+    font-size: 40px;
+    padding-bottom: 24px;
+  }
+  .footer-container p {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
+  br {
+    display: inline;
+  }
+  .footer-social {
+    display: inline;
+    text-align: center;
+  }
+  /* footer responsive section ends */
 }
 
 /* media query responsive for mobile mxw576 ends */
