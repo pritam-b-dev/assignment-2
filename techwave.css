@@ -55,6 +55,10 @@ nav {
   border-radius: 10000px;
   line-height: 19px;
   cursor: pointer;
+  transition: transform 1s ease-in-out;
+}
+.nav-btn button:hover {
+  transform: scale(1.2);
 }
 .nav-btn button i {
   width: 20px;
@@ -156,9 +160,16 @@ hr {
   padding-bottom: 24px;
   color: rgba(255, 255, 255, 0.702);
 }
+.banner-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
 .banner-buttons .banner-buttons-1 {
-  width: 200px;
-  height: 45px;
+  width: 100%;
+  height: 100%;
+  max-width: 200px;
+  min-height: 45px;
   background: linear-gradient(20deg, #f7e93f 10%, #fb09b4 50%, #9100f8 90%);
   color: white;
   font-weight: 600;
@@ -168,18 +179,19 @@ hr {
   line-height: 19px;
   cursor: pointer;
 }
-.banner-buttons {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
+.banner-buttons-1:hover {
+  background: #fb09b4;
 }
+
 .banner-buttons .banner-buttons-1 img {
   vertical-align: middle;
   padding-right: 5px;
 }
 .banner-buttons .banner-buttons-2 {
-  width: 150px;
-  height: 45px;
+  width: 100%;
+  height: 100%;
+  max-width: 150px;
+  min-height: 45px;
   font-size: 16px;
   font-weight: 600;
   border-radius: 10000px;
@@ -187,6 +199,10 @@ hr {
   border: 2px solid #00ff88;
   color: #00ff88;
   cursor: pointer;
+}
+.banner-buttons-2:hover {
+  background: linear-gradient(20deg, #f7e93f 10%, #fb09b4 50%, #9100f8 90%);
+  color: white;
 }
 .banner-buttons .banner-buttons-2 img {
   vertical-align: middle;
@@ -249,7 +265,7 @@ hr {
 }
 .advantages-grid {
   display: grid;
-  grid-template-columns: repeat(3, 390px);
+  grid-template-columns: repeat(3, 380px);
   grid-template-rows: repeat(3, 260px);
   gap: 30px;
   margin: auto;
@@ -385,7 +401,7 @@ hr {
   display: flex;
   gap: 8px;
 }
-.host-info .host-social div {
+.host-info .host-social div a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -460,27 +476,44 @@ br {
     padding-left: 20px;
   }
   .banner-container {
-    background-size: 100%;
+    background-size: 100% 100%;
     min-height: 465px;
-    background-position: center 60px;
+    background-position: top;
   }
   .banner-image {
     width: 150px;
     height: 150px;
+  }
+  @keyframes image-circle {
+    0% {
+      transform: translate(-50%, -30%) scale(1.1);
+    }
+    25% {
+      transform: translate(-50%, -30%) scale(0.9);
+    }
+    50% {
+      transform: translate(-50%, -30%) scale(1.1);
+    }
+    75% {
+      transform: translate(-50%, -30%) scale(0.9);
+    }
+    100% {
+      transform: translate(-50%, -30%) scale(1.1);
+    }
   }
   .img-circle {
     width: 150px;
     height: 150px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -30%);
   }
   .img-mcp {
     width: 40px;
     height: 65px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -70%);
+    transform: translate(-50%, -10%);
   }
   .img-pill {
     width: 65px;
@@ -489,13 +522,25 @@ br {
     padding: 5px;
     top: 10%;
     left: 65%;
-    transform: translate(10%, -20%);
+    transform: translate(10%, 90%);
   }
+
   .banner-text-buttons {
     margin-top: 40px;
   }
   .banner-text-buttons > h2 {
     font-size: 40px;
+  }
+  .banner-buttons .banner-buttons-1 img {
+    vertical-align: middle;
+    padding-right: 5px;
+  }
+
+  .banner-buttons .banner-buttons-2 {
+    width: 80%;
+  }
+  .banner-buttons .banner-buttons-1 {
+    width: 80%;
   }
 
   /* header responsive area ends */
@@ -539,6 +584,7 @@ br {
   /* advantages responsive section ends */
 
   /* Video responsive section starts */
+
   .video-container {
     flex-direction: column;
     gap: 16px;
@@ -546,7 +592,7 @@ br {
     align-items: center;
   }
   .video-container-card {
-    width: 300px;
+    width: 90%;
   }
   .card-heading {
     font-size: 32px;
