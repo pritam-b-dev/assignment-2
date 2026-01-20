@@ -224,6 +224,7 @@ hr {
 .about-article h2 {
   font-size: 48px;
   font-weight: bold;
+  padding-bottom: 16px;
 }
 .about-article p {
   color: rgba(255, 255, 255, 0.695);
