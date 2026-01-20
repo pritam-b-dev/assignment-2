@@ -451,7 +451,7 @@ footer {
   font-size: 13px;
   font-weight: 500;
 }
-br {
+.break {
   display: none;
 }
 
@@ -631,12 +631,20 @@ br {
     width: 100%;
     text-align: center;
   }
-  br {
-    display: inline;
+  .footer-social .break {
+    display: block;
+    padding: 5px 0px;
   }
   .footer-social {
     display: inline;
     text-align: center;
+  }
+  .footer-social span {
+    padding: 0px 5px;
+  }
+  .footer-social img {
+    padding: 0px 10px;
+    vertical-align: middle;
   }
   /* footer responsive section ends */
 }
