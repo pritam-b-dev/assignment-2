@@ -442,6 +442,18 @@ hr {
   }
 
   /* advantages responsive section ends */
+  .video-container {
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+  .video-container-card {
+    width: 300px;
+  }
+  .card-heading {
+    font-size: 32px;
+  }
 }
 
 /* media query responsive for mobile mxw576 ends */
